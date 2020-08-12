@@ -5,7 +5,7 @@ body {
 }
 
 .row {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.88);
   margin: 15px;
   padding: 65px;
   display: -webkit-box;
@@ -13,6 +13,12 @@ body {
   display: flex;
   max-width: 1400px;
   height: 850px;
+}
+
+.row .strong {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-left: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -60,15 +66,15 @@ body {
   -ms-grid-columns: auto auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 18px;
-  background-color: #fff;
-  padding: 50px 50px 50px 10px;
+  /*background-color: #fff;*/
+  padding: 0px 50px 50px 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(88, 88, 243, 0.7);
+  /*background-color: $bg-color;*/
   text-align: left;
-  padding: 65px 0;
-  font-size: 10px;
+  padding: 66px 8px;
+  font-size: 16px;
   border-radius: 25px;
 }
 
@@ -79,6 +85,19 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
+  background-color: rgba(220, 220, 220, 0.7);
+}
+
+.chairs p {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chairs p .number {
+  color: rgba(128, 128, 128, 0.6);
+  margin-left: 5px;
 }
 
 .tables {
@@ -88,6 +107,19 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / span 1;
+  background-color: rgba(255, 165, 0, 0.2);
+}
+
+.tables p {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tables p .number {
+  color: rgba(128, 128, 128, 0.6);
+  margin-left: 5px;
 }
 
 .bed {
@@ -97,6 +129,19 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / span 1;
+  background-color: rgba(175, 238, 238, 0.7);
+}
+
+.bed p {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bed p .number {
+  color: rgba(128, 128, 128, 0.6);
+  margin-left: 5px;
 }
 
 .light {
@@ -106,6 +151,19 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / span 1;
+  background-color: rgba(221, 160, 221, 0.5);
+}
+
+.light p {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.light p .number {
+  color: rgba(128, 128, 128, 0.6);
+  margin-left: 5px;
 }
 
 .wardrobe {
@@ -115,6 +173,19 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
+  background-color: rgba(165, 42, 42, 0.25);
+}
+
+.wardrobe p {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wardrobe p .number {
+  color: rgba(128, 128, 128, 0.6);
+  margin-left: 5px;
 }
 
 .decoration {
@@ -124,6 +195,19 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
+  background-color: rgba(176, 176, 243, 0.4);
+}
+
+.decoration p {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.decoration p .number {
+  color: rgba(128, 128, 128, 0.6);
+  margin-left: 5px;
 }
 
 /*list area between both grid containers*/
@@ -131,6 +215,7 @@ body {
   list-style: none;
   margin-right: 20px;
   margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .kels ul li {
@@ -152,8 +237,10 @@ body {
 }
 
 #see-more {
-  margin-left: 430px;
+  position: absolute;
+  margin-left: 320px;
   font-size: small;
+  top: 560px;
 }
 
 /*second grid container using flex*/
@@ -167,45 +254,92 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-right: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 .grid-container-2 .odger {
-  background-color: rgba(255, 192, 203, 0.7);
-  width: 220px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(220, 220, 220, 0.3)), color-stop(45%, #fff));
+  background: linear-gradient(180deg, rgba(220, 220, 220, 0.3) 55%, #fff 45%);
+  width: 23.1%;
   height: 200px;
   margin-right: 15px;
   margin-left: 18px;
   border-radius: 15px;
 }
 
+.grid-container-2 .odger p {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 10%;
+}
+
+.grid-container-2 .odger p .digits {
+  font-size: 12px;
+}
+
 .grid-container-2 .tossberg {
-  background-color: rgba(255, 192, 203, 0.7);
-  width: 220px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(220, 220, 220, 0.3)), color-stop(45%, #fff));
+  background: linear-gradient(180deg, rgba(220, 220, 220, 0.3) 55%, #fff 45%);
+  width: 23.1%;
   height: 200px;
   margin-right: 15px;
   border-radius: 15px;
+}
+
+.grid-container-2 .tossberg p {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 10%;
+}
+
+.grid-container-2 .tossberg p .digits {
+  font-size: 12px;
 }
 
 .grid-container-2 .leifarne {
-  background-color: rgba(255, 192, 203, 0.7);
-  width: 220px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(220, 220, 220, 0.3)), color-stop(45%, #fff));
+  background: linear-gradient(180deg, rgba(220, 220, 220, 0.3) 55%, #fff 45%);
+  width: 23.1%;
   height: 200px;
   margin-right: 15px;
   border-radius: 15px;
 }
 
+.grid-container-2 .leifarne p {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 10%;
+}
+
+.grid-container-2 .leifarne p .digits {
+  font-size: 12px;
+}
+
 .grid-container-2 .tossberg-2 {
-  background-color: rgba(255, 192, 203, 0.7);
-  width: 220px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(220, 220, 220, 0.3)), color-stop(45%, #fff));
+  background: linear-gradient(180deg, rgba(220, 220, 220, 0.3) 55%, #fff 45%);
+  width: 23.1%;
   height: 200px;
   margin-right: 0px;
   border-radius: 15px;
 }
 
+.grid-container-2 .tossberg-2 p {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 10%;
+}
+
+.grid-container-2 .tossberg-2 p .digits {
+  font-size: 12px;
+}
+
 /*the blue side bar*/
 .aside {
   background-color: rgba(88, 88, 243, 0.94);
-  padding: 15px 15px 70px 15px;
+  padding: 15px 15px 70px 23px;
   border-radius: 60px;
 }
 
@@ -222,6 +356,25 @@ body {
   height: 90px;
 }
 
+.aside #box-1 .toss {
+  position: absolute;
+  margin-top: -63px;
+  margin-left: 140px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.aside #box-1 .toss .num {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.aside #box-1 .toss .num #gray {
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 10px;
+}
+
 .aside #box-1 #box-1-1 {
   position: relative;
   width: 31%;
@@ -229,11 +382,6 @@ body {
   margin-left: 0;
   background: #fff;
   border-radius: 20px;
-}
-
-.aside #box-1 p {
-  color: red;
-  text-align: right;
 }
 
 .aside #box-2 {
@@ -247,6 +395,44 @@ body {
   overflow: hidden;
   width: 80%;
   height: 90px;
+}
+
+.aside #box-2 .chaise {
+  position: absolute;
+  margin-top: -63px;
+  margin-left: 140px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 18px;
+}
+
+.aside #box-2 .chaise .num {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.aside #box-2 .chaise .num #gray {
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 10px;
+}
+
+.aside #box-2 .alice {
+  position: absolute;
+  margin-top: -63px;
+  margin-left: 140px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 18px;
+}
+
+.aside #box-2 .alice .num {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.aside #box-2 .alice .num #gray {
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 10px;
 }
 
 .aside #box-2 #box-1-1 {
@@ -263,13 +449,14 @@ body {
   padding: 10px;
   border: 2px solid #7272f8;
   margin-top: 40px;
-  margin-left: 10px;
+  margin-left: 16px;
   margin-right: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   border-radius: 20px;
   overflow: hidden;
   width: 82%;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .aside #box-4 table {
@@ -288,6 +475,7 @@ body {
 
 .aside #box-4 table #link {
   color: rgba(255, 255, 255, 0.35);
+  margin-left: 10px;
 }
 
 .aside #box-4 table #t-4 td {
